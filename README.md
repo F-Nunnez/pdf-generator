@@ -34,7 +34,7 @@ This web application is a Flask-based invoice/receipt PDF generator that follows
 ## Installation Guide <a name="install"></a>
 1. Clone the repository: `git clone <repository-url>`
 2. Change to the project directory: `cd pdf-generator`
-3. Install project dependencies using pipenv: `pipenv install`
+3. Install project dependencies using pipenv: `pipenv install PyMySQL flask`
 4. Activate the project's virtual environment: `pipenv shell`
 5. Create a file named `.env` in the project's root directory.
 6. Inside the `.env` file, set the following environment variables:
@@ -50,7 +50,7 @@ Adjust the values according to your MySQL database configuration.
 8. Create a directory named `Invoice` at the root level of the project where the generated files will be stored. `C:\Users\User\Downloads\Invoices`
 
 ## Usage Guide <a name="usage"></a>
-1. Start the Flask development server: `flask run`
+1. Start the Flask development server: `python server.py`
 2. Access the application in your web browser at `http://localhost:5000`
 3. Provide the necessary details for generating an invoice/receipt, such as customer information, itemized list, and payment details.
 4. Customize the template as needed by selecting different styles, layouts, or adding your logo.
